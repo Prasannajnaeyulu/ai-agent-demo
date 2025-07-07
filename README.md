@@ -47,6 +47,13 @@ This project responds to messages in a Slack channel by automatically fetching r
 - Add your bot to the desired Slack channel.
 - Ask questions or mention GitHub issues in Slack.
 - The bot will reply with contextually relevant answers, pulling information from GitHub as needed.
+  
+**Examples:**
+#1 ![image](https://github.com/user-attachments/assets/8918364c-03bd-4736-9dc3-5626757270a3)
+#2 <img width="1438" alt="image" src="https://github.com/user-attachments/assets/c2960e97-3579-4107-b85c-480767d4a6b8" />
+#3 <img width="1396" alt="image" src="https://github.com/user-attachments/assets/0d6d422d-9bd0-45f2-ac4a-128501ab8dd1" />
+
+
 
 ## Technologies Used
 
