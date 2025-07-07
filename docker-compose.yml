@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  ollama:
+    image: ollama/ollama
+    platform: linux/arm64
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 5 && ollama pull gemma3:1b && tail -f /dev/null"]
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - ollama
+    environment:
+      OLLAMA_HOST: http://ollama:11434  # your app should read this
+
+volumes:
+  ollama_data:
