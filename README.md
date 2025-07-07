@@ -20,6 +20,7 @@ This project responds to messages in a Slack channel by automatically fetching r
 - Slack API credentials (for bot integration).
 - Access to the GitHub repository you want to query.
 - Ollama installed and configured to serve the Gemma 1B model.
+- ngrok to expose bot app to external public URL to integrate with slack
 
 ## Installation
 
